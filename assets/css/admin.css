@@ -1,0 +1,45 @@
+/**
+ * Classic Editor & Widgets Admin Styles
+ *
+ * @package ClassicEditorWidgets
+ * @version 1.0.0
+ */
+
+/* Admin notice styling */
+.classic-editor-widgets-notice {
+    border-left-color: #0073aa;
+}
+
+.classic-editor-widgets-notice .notice-dismiss {
+    padding: 0;
+}
+
+/* Widget area styling */
+.widgets-php .widgets-holder-wrap {
+    margin-bottom: 20px;
+}
+
+/* Classic editor enhancements */
+.post-php .wp-editor-wrap {
+    margin-bottom: 20px;
+}
+
+/* Custom styling for classic editor */
+.wp-editor-container {
+    border: 1px solid #ddd;
+}
+
+/* Ensure proper spacing in classic editor */
+.wp-editor-area {
+    min-height: 300px;
+}
+
+/* Widget management styling */
+.widgets-php .widgets-sortables {
+    min-height: 50px;
+}
+
+/* Customizer widget styling */
+.customize-control-widget_form {
+    margin-bottom: 15px;
+}
