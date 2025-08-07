@@ -2,7 +2,7 @@
  * Classic Editor & Widgets Admin JavaScript
  *
  * @package ClassicEditorWidgets
- * @version 1.1.0
+ * @version 1.2.0
  */
 
 (function($) {

@@ -1,26 +1,14 @@
-# Classic Editor & Widgets
-
-A lightweight WordPress plugin that enables the classic editor and classic widgets, restoring the previous "classic" editor with TinyMCE and the old-style widget management screens.
-
-[![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/classic-editor-widgets.svg)](https://wordpress.org/plugins/classic-editor-widgets/)
-[![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/classic-editor-widgets.svg)](https://wordpress.org/plugins/classic-editor-widgets/)
-[![WordPress Plugin Rating](https://img.shields.io/wordpress/plugin/r/classic-editor-widgets.svg)](https://wordpress.org/plugins/classic-editor-widgets/)
-[![License](https://img.shields.io/badge/license-GPL%20v2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
-
----
-
-<!-- WordPress.org Plugin Header -->
 === Classic Editor & Widgets ===
 Contributors: ghouliaras
 Tags: classic-editor, widgets, tinymce, gutenberg, block-editor
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight WordPress plugin that enables the classic editor and classic widgets, restoring the previous "classic" editor with TinyMCE and the old-style widget management screens.
+Enables the classic editor and classic widgets in WordPress, restoring TinyMCE and old-style widget management.
 
 == Description ==
 
@@ -80,6 +68,12 @@ No, this plugin disables the block editor completely. If you need both editors, 
 
 == Changelog ==
 
+= 1.2.0 =
+* Enhanced plugin stability and performance
+* Improved WordPress 6.4+ compatibility
+* Better code organization and documentation
+* Minor bug fixes and optimizations
+
 = 1.1.0 =
 * Improved text domain handling
 * Removed unnecessary admin notices
@@ -95,6 +89,9 @@ No, this plugin disables the block editor completely. If you need both editors, 
 * Plugin compatibility support
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+Enhanced stability and performance improvements for better WordPress compatibility.
 
 = 1.1.0 =
 Improved text domain handling and code optimization for better WordPress.org compatibility.
@@ -125,7 +122,14 @@ For more information and support, visit the [plugin repository](https://github.c
 
 ---
 
-<!-- GitHub Content -->
+# Classic Editor & Widgets
+
+A lightweight WordPress plugin that enables the classic editor and classic widgets, restoring the previous "classic" editor with TinyMCE and the old-style widget management screens.
+
+[![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/classic-editor-widgets.svg)](https://wordpress.org/plugins/classic-editor-widgets/)
+[![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/classic-editor-widgets.svg)](https://wordpress.org/plugins/classic-editor-widgets/)
+[![WordPress Plugin Rating](https://img.shields.io/wordpress/plugin/r/classic-editor-widgets.svg)](https://wordpress.org/plugins/classic-editor-widgets/)
+[![License](https://img.shields.io/badge/license-GPL%20v2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 
 ## 🚀 Features
 
@@ -243,6 +247,12 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 5. Open a Pull Request
 
 ## 📝 Changelog
+
+### Version 1.2.0
+- Enhanced plugin stability and performance
+- Improved WordPress 6.4+ compatibility
+- Better code organization and documentation
+- Minor bug fixes and optimizations
 
 ### Version 1.1.0
 - Improved text domain handling

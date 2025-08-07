@@ -3,7 +3,7 @@
  * Classic Editor Handler
  *
  * @package ClassicEditorWidgets
- * @version 1.1.0
+ * @version 1.2.0
  */
 
 // Prevent direct access
@@ -128,7 +128,7 @@ class CEW_Classic_Editor {
 		// Add custom meta boxes if needed
 		add_meta_box(
 			'classic-editor-info',
-			__( 'Classic Editor Active', 'classic-editor-widgets-1.1.0' ),
+			__( 'Classic Editor Active', 'classic-editor-widgets' ),
 			array( __CLASS__, 'meta_box_callback' ),
 			'post',
 			'side',
@@ -142,7 +142,7 @@ class CEW_Classic_Editor {
 	 * @param WP_Post $post Post object.
 	 */
 	public static function meta_box_callback( $post ) {
-		echo '<p>' . esc_html__( 'You are using the classic editor with TinyMCE.', 'classic-editor-widgets-1.1.0' ) . '</p>';
-		echo '<p><small>' . esc_html__( 'All classic editor plugins and meta boxes are supported.', 'classic-editor-widgets-1.1.0' ) . '</small></p>';
+		echo '<p>' . esc_html__( 'You are using the classic editor with TinyMCE.', 'classic-editor-widgets' ) . '</p>';
+		echo '<p><small>' . esc_html__( 'All classic editor plugins and meta boxes are supported.', 'classic-editor-widgets' ) . '</small></p>';
 	}
 }

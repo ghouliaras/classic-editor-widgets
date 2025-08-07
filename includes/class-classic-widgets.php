@@ -3,7 +3,7 @@
  * Classic Widgets Handler
  *
  * @package ClassicEditorWidgets
- * @version 1.1.0
+ * @version 1.2.0
  */
 
 // Prevent direct access
@@ -106,8 +106,8 @@ class CEW_Classic_Widgets {
 					'nonce' => wp_create_nonce( 'classic_editor_widgets_nonce' ),
 					'ajaxurl' => admin_url( 'admin-ajax.php' ),
 					'strings' => array(
-						'widgetSaved' => __( 'Widget saved successfully.', 'classic-editor-widgets-1.1.0' ),
-						'widgetError' => __( 'Error saving widget.', 'classic-editor-widgets-1.1.0' ),
+						'widgetSaved' => __( 'Widget saved successfully.', 'classic-editor-widgets' ),
+						'widgetError' => __( 'Error saving widget.', 'classic-editor-widgets' ),
 					),
 				)
 			);
@@ -127,7 +127,7 @@ class CEW_Classic_Widgets {
 	 */
 	public static function add_widget_management_info() {
 		echo '<div class="notice notice-info inline">';
-		echo '<p>' . esc_html__( 'You are using the classic widgets interface. All classic widgets and their settings are fully supported.', 'classic-editor-widgets-1.1.0' ) . '</p>';
+		echo '<p>' . esc_html__( 'You are using the classic widgets interface. All classic widgets and their settings are fully supported.', 'classic-editor-widgets' ) . '</p>';
 		echo '</div>';
 	}
 
