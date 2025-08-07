@@ -3,20 +3,19 @@
  * Plugin Name: Classic Editor & Widgets
  * Plugin URI: https://github.com/ghouliaras/classic-editor-widgets
  * Description: Enables the classic editor and classic widgets in WordPress. Restores the previous "classic" editor with TinyMCE and the old-style widget management screens.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: ghouliaras
  * Author URI: https://github.com/ghouliaras
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: classic-editor-widgets
+ * Text Domain: classic-editor-widgets-1.1.0
  * Domain Path: /languages
  * Requires at least: 5.0
  * Tested up to: 6.4
  * Requires PHP: 7.4
- * Network: false
  *
  * @package ClassicEditorWidgets
- * @version 1.0.0
+ * @version 1.1.0
  */
 
 // Prevent direct access
@@ -25,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define plugin constants
-define( 'CEW_VERSION', '1.0.0' );
+define( 'CEW_VERSION', '1.1.0' );
 define( 'CEW_PLUGIN_FILE', __FILE__ );
 define( 'CEW_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'CEW_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -70,9 +69,6 @@ class Classic_Editor_Widgets {
 	 * Initialize hooks
 	 */
 	private function init_hooks() {
-		// Load text domain
-		add_action( 'init', array( $this, 'load_textdomain' ) );
-
 		// Initialize classic editor and widgets
 		CEW_Classic_Editor::init();
 		CEW_Classic_Widgets::init();
@@ -89,26 +85,10 @@ class Classic_Editor_Widgets {
 	}
 
 	/**
-	 * Load plugin textdomain
-	 */
-	public function load_textdomain() {
-		load_plugin_textdomain(
-			'classic-editor-widgets',
-			false,
-			dirname( CEW_PLUGIN_BASENAME ) . '/languages'
-		);
-	}
-
-
-
-	/**
 	 * Admin initialization
 	 */
 	public function admin_init() {
-		// Add admin notices if needed
-		if ( ! $this->is_classic_editor_plugin_active() ) {
-			add_action( 'admin_notices', array( $this, 'classic_editor_notice' ) );
-		}
+		// Admin initialization tasks can be added here
 	}
 
 	/**
@@ -125,30 +105,7 @@ class Classic_Editor_Widgets {
 		);
 	}
 
-	/**
-	 * Check if classic editor plugin is active
-	 *
-	 * @return bool
-	 */
-	private function is_classic_editor_plugin_active() {
-		return function_exists( 'classic_editor_init' );
-	}
 
-	/**
-	 * Admin notice for classic editor plugin
-	 */
-	public function classic_editor_notice() {
-		$message = sprintf(
-			/* translators: %s: Classic Editor plugin URL */
-			__( 'For the best experience with Classic Editor & Widgets, we recommend installing the <a href="%s" target="_blank">Classic Editor plugin</a>.', 'classic-editor-widgets' ),
-			'https://wordpress.org/plugins/classic-editor/'
-		);
-
-		printf(
-			'<div class="notice notice-info is-dismissible"><p>%s</p></div>',
-			wp_kses_post( $message )
-		);
-	}
 
 	/**
 	 * Plugin activation

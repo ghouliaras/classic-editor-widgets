@@ -2,6 +2,131 @@
 
 A lightweight WordPress plugin that enables the classic editor and classic widgets, restoring the previous "classic" editor with TinyMCE and the old-style widget management screens.
 
+[![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/classic-editor-widgets.svg)](https://wordpress.org/plugins/classic-editor-widgets/)
+[![WordPress Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/classic-editor-widgets.svg)](https://wordpress.org/plugins/classic-editor-widgets/)
+[![WordPress Plugin Rating](https://img.shields.io/wordpress/plugin/r/classic-editor-widgets.svg)](https://wordpress.org/plugins/classic-editor-widgets/)
+[![License](https://img.shields.io/badge/license-GPL%20v2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+
+---
+
+<!-- WordPress.org Plugin Header -->
+=== Classic Editor & Widgets ===
+Contributors: ghouliaras
+Tags: classic-editor, widgets, tinymce, gutenberg, block-editor
+Requires at least: 5.0
+Tested up to: 6.4
+Requires PHP: 7.4
+Stable tag: 1.1.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+A lightweight WordPress plugin that enables the classic editor and classic widgets, restoring the previous "classic" editor with TinyMCE and the old-style widget management screens.
+
+== Description ==
+
+= Classic Editor =
+
+**TinyMCE Integration**: Restores the classic TinyMCE editor for all post types
+**Meta Boxes Support**: Full support for all classic editor plugins and meta boxes
+**Block Editor Disabled**: Completely disables the Gutenberg block editor
+**Asset Optimization**: Removes unnecessary block editor scripts and styles
+**Plugin Compatibility**: Supports all plugins that extend the classic editor
+
+= Classic Widgets =
+
+**Widget Management**: Restores the classic Appearance → Widgets screen
+**Customizer Support**: Enables classic widgets in the WordPress Customizer
+**Block Widgets Disabled**: Disables the block editor from managing widgets
+**Drag & Drop**: Full drag-and-drop functionality for widget management
+**All Widget Types**: Supports all classic WordPress widgets
+
+== Installation ==
+
+### Method 1: Manual Installation (Recommended)
+
+1. Download the plugin files
+2. Upload the `classic-editor-widgets` folder to your `/wp-content/plugins/` directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
+4. That's it! The classic editor and widgets are now enabled
+
+### Method 2: Git Clone
+
+```bash
+cd wp-content/plugins/
+git clone https://github.com/ghouliaras/classic-editor-widgets.git
+```
+
+Then activate the plugin through the WordPress admin.
+
+== Frequently Asked Questions ==
+
+= Does this plugin work with WordPress 6.4? =
+
+Yes, this plugin has been tested and works perfectly with WordPress 6.4.
+
+= Will this plugin conflict with other plugins? =
+
+No, this plugin is designed to work alongside other plugins without conflicts. It only modifies the editor and widget interfaces.
+
+= Can I still use block editor plugins? =
+
+No, this plugin disables the block editor completely. If you need both editors, consider using the official Classic Editor plugin instead.
+
+== Screenshots ==
+
+1. Classic editor interface with TinyMCE
+2. Classic widgets management screen
+3. Plugin settings and configuration
+
+== Changelog ==
+
+= 1.1.0 =
+* Improved text domain handling
+* Removed unnecessary admin notices
+* Enhanced compatibility with WordPress 6.4
+* Code optimization and cleanup
+
+= 1.0.0 =
+* Initial release
+* Classic editor support with TinyMCE
+* Classic widgets management
+* Block editor and block widgets disabled
+* Asset optimization
+* Plugin compatibility support
+
+== Upgrade Notice ==
+
+= 1.1.0 =
+Improved text domain handling and code optimization for better WordPress.org compatibility.
+
+= 1.0.0 =
+Initial release of Classic Editor & Widgets plugin.
+
+== Usage ==
+
+### Classic Editor
+Once activated, the plugin automatically:
+- Disables the block editor for all post types
+- Enables the classic TinyMCE editor
+- Supports all existing meta boxes and editor plugins
+- Works with posts, pages, and custom post types
+
+### Classic Widgets
+The plugin automatically:
+- Restores the classic widget management interface
+- Enables classic widgets in the Customizer
+- Disables block-based widget management
+- Maintains all existing widget functionality
+
+
+The plugin works out of the box with no configuration required. Simply activate it and the classic editor and widgets will be enabled automatically.
+
+For more information and support, visit the [plugin repository](https://github.com/ghouliaras/classic-editor-widgets).
+
+---
+
+<!-- GitHub Content -->
+
 ## 🚀 Features
 
 ### Classic Editor
@@ -118,6 +243,12 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 5. Open a Pull Request
 
 ## 📝 Changelog
+
+### Version 1.1.0
+- Improved text domain handling
+- Removed unnecessary admin notices
+- Enhanced compatibility with WordPress 6.4
+- Code optimization and cleanup
 
 ### Version 1.0.0
 - Initial release
