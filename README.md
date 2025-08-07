@@ -2,9 +2,9 @@
 Contributors: ghouliaras
 Tags: classic-editor, widgets, tinymce, gutenberg, block-editor
 Requires at least: 5.0
-Tested up to: 6.4
+Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,12 @@ No, this plugin disables the block editor completely. If you need both editors, 
 
 == Changelog ==
 
+= 1.3.0 =
+* Enhanced WordPress 6.8 compatibility
+* Improved plugin performance and stability
+* Better error handling and user experience
+* Code optimization and security improvements
+
 = 1.2.0 =
 * Enhanced plugin stability and performance
 * Improved WordPress 6.4+ compatibility
@@ -89,6 +95,9 @@ No, this plugin disables the block editor completely. If you need both editors, 
 * Plugin compatibility support
 
 == Upgrade Notice ==
+
+= 1.3.0 =
+Enhanced WordPress 6.8 compatibility and improved performance for better user experience.
 
 = 1.2.0 =
 Enhanced stability and performance improvements for better WordPress compatibility.
@@ -247,6 +256,12 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 5. Open a Pull Request
 
 ## 📝 Changelog
+
+### Version 1.3.0
+- Enhanced WordPress 6.8 compatibility
+- Improved plugin performance and stability
+- Better error handling and user experience
+- Code optimization and security improvements
 
 ### Version 1.2.0
 - Enhanced plugin stability and performance

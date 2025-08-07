@@ -3,7 +3,7 @@
  * Plugin Name: Classic Editor & Widgets
  * Plugin URI: https://github.com/ghouliaras/classic-editor-widgets
  * Description: Enables the classic editor and classic widgets in WordPress. Restores the previous "classic" editor with TinyMCE and the old-style widget management screens.
- * Version: 1.2.0
+ * Version: 1.3.0
  * Author: ghouliaras
  * Author URI: https://github.com/ghouliaras
  * License: GPL v2 or later
@@ -11,11 +11,11 @@
  * Text Domain: classic-editor-widgets
  * Domain Path: /languages
  * Requires at least: 5.0
- * Tested up to: 6.4
+ * Tested up to: 6.8
  * Requires PHP: 7.4
  *
  * @package ClassicEditorWidgets
- * @version 1.2.0
+ * @version 1.3.0
  */
 
 // Prevent direct access
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define plugin constants
-define( 'CEW_VERSION', '1.2.0' );
+define( 'CEW_VERSION', '1.3.0' );
 define( 'CEW_PLUGIN_FILE', __FILE__ );
 define( 'CEW_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'CEW_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
